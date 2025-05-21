@@ -346,13 +346,12 @@ class MetadataProcessor:
                 "Analysez la méta-description et les mots-clés pour:\n"
                 "1. Pertinence par rapport au contenu\n"
                 "2. Efficacité de l'optimisation pour les moteurs de recherche\n"
-                "3. Densité et placement des mots-clés\n"
-                "4. Potentiel d'engagement des utilisateurs\n\n"
+                "3. Densité et placement des mots-clés\n\n"                
                 "Fournissez des recommandations spécifiques et exploitables pour les améliorations. Si les métadonnées sont déjà optimales, expliquez pourquoi.\n\n"
                 f"Contenu: {content}\n\n"
                 f"Méta-description actuelle: {description}\n\n"
                 f"Mots-clés actuels: {keywords}\n\n"
-                "Analyse SEO experte et recommandations:"
+                "Analyse SEO et recommandations:"
             )
         else:  # Default to English
             prompt_text = (
@@ -360,14 +359,13 @@ class MetadataProcessor:
                 "Review the following content and its metadata with a focus on maximizing search engine visibility and user engagement. "
                 "Analyze the meta description and keywords for:\n"
                 "1. Relevance to content\n"
-                "2. Search engine optimization effectiveness\n"
-                "3. Keyword density and placement\n"
-                "4. User engagement potential\n\n"
+                "2. Search engine optimization effectiveness\n\n"
+                "3. Keyword density and placement\n"                
                 "Provide specific, actionable recommendations for improvements. If the metadata is already optimal, explain why.\n\n"
                 f"Content: {content}\n\n"
                 f"Current Meta Description: {description}\n\n"
                 f"Current Keywords: {keywords}\n\n"
-                "Expert SEO Analysis and Recommendations:"
+                "SEO Analysis and Recommendations:"
             )
         
         try:
